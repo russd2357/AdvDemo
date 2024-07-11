@@ -1,8 +1,5 @@
 import streamlit as st  
   
-# Page configuration  
-st.set_page_config(page_title="Lesson 2 Activities", page_icon="📘")  
-  
 # Main title of the page  
 st.title("Lesson 2 Activities: IF Statement and Operators 📘")  
   
@@ -20,7 +17,7 @@ test3 = st.number_input("Test Score 3 (out of 20):", min_value=0, max_value=20, 
   
 # Placeholder for pass/fail logic  
 # TODO: Use an IF statement to determine if the student has passed or failed  
-  
+
 # Activity 2: Grade Evaluation  
 st.header("Activity 2: Grade Evaluation")  
 st.write("Based on your scores from Activity 1, let's determine your grade.")  

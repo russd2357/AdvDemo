@@ -2,9 +2,6 @@
 import streamlit as st  
 import random  
   
-# Page configuration  
-#st.set_page_config(page_title="Lesson 2: IF Statements and Operators", page_icon="📘")  
-  
 # Main title of the page  
 st.title("Lesson 2: IF Statements and Operators 📘")  
   
@@ -44,17 +41,6 @@ Logical operators are used to combine conditional statements:
 - `not`: Logical NOT  
 """)  
   
-# Example of if/else with a guessing game  
-st.header("Let's Play a Number Guessing Game! 🎲")  
-secret_number = random.randint(1, 10)  
-guess = st.number_input('Guess a number between 1 and 10', min_value=1, max_value=10, step=1)  
-if guess:  
-    if guess > secret_number:  
-        st.error('Too high! Try again.')  
-    elif guess < secret_number:  
-        st.error('Too low! Try again.')  
-    else:  
-        st.success('You got it! 🎉')  
 
 # Interactive Elements  
 with st.expander("Interactive Elements 🎛️", expanded=False):
@@ -103,14 +89,22 @@ st.sidebar.image("https://github.com/BSMP-Coders/BSMP-Coders.github.io/raw/maste
   
 # Sidebar with helpful resources  
 st.sidebar.header("Helpful Resources")  
+st.sidebar.markdown("""
+## Additional Resources 📚  
+   
+For more information on Python if statements and for loops, please go through these tutorials on [vscodeedu - intro to python](https://vscodeedu.com/courses/intro-to-python) using your BAM emails:  
+   
+- **Unit 3 (vscodeedu) - If Statements**: [If Statements Tutorial](https://vscode.dev/edu?courseId=intro-to-python&workspace-scheme=vscode-edu-workspace&profile=default#select-course-node=intro-to-python%3Aitp-if)  
+- **Unit 5 (vscodeedu) - For Loops**: [For Loops Tutorial](https://vscode.dev/edu?courseId=intro-to-python&workspace-scheme=vscode-edu-workspace&profile=default#select-course-node=intro-to-python%3Aitp-for)  
+
+""")
 st.sidebar.markdown("""  
-- [Python Beginner's Guide](https://docs.python.org/3/tutorial/index.html)  
 - [Streamlit Documentation](https://docs.streamlit.io/)  
 - [Cheat sheet](https://docs.streamlit.io/library/cheatsheet)  
 """)  
 
-st.sidebar.markdown("""
+st.sidebar.markdown("""                    
 # Check out my other Streamlit projects! 🚀
-- [StreamlitLand Adventure RPG](https://github.com/TomJohnH/streamlit-game) 👉 adventure.streamlit.app
-- [Streamlit Dungeon Crawler](https://github.com/TomJohnH/streamlit-dungeon) 👉 dungeon.streamlit.app
+- [StreamlitLand Adventure RPG](https://github.com/TomJohnH/streamlit-game)
+- [Streamlit Dungeon Crawler](https://github.com/TomJohnH/streamlit-dungeon)
 """)
