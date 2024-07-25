@@ -1,5 +1,0 @@
-streamlit
-plotly
-streamlit_jupyter
-ipywidgets
-ipykernel
