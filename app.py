@@ -3,7 +3,7 @@ import streamlit as st
 import random  
   
 # Main title of the page  
-st.title("Lesson 2: IF Statements and Operators 📘")  
+st.title("Lesson 2 - How to Fly the Bebop")  
   
 # Recap Lesson 1 and Homework Assignment Breakout  
 st.header("Recap of Lesson 1 and Homework")  
